@@ -1,20 +1,24 @@
 import React, { Component } from "react";
-import { Button } from "antd";
 import { initialState } from "./initialState/initialState";
-import ChoisePage from './containers/ChoisePage'
+import ChoicePage from './containers/ChoisePage/ChoicePage';
+
+import styles from './App.module.css';
 
 export default class App extends Component {
     state = initialState
 
-    chooseCategory = () => {
-        
+    chooseCategory = (name) => {
+        this.setState({
+            currentCategory: name
+        })
+
     }
 
   render() {
+      console.log('currentCategory', this.state.currentCategory)
     return (
-      <div>
-        <ChoisePage/>
-        <Button type="primary">Button</Button>
+      <div className={styles.container}>
+        <ChoicePage chooseCategory={this.chooseCategory} />
       </div>
     );
   }
