@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/GameOFTeens_JAVASCRIPT/static/css/main.afd7172b.chunk.css",
+    "main.js": "/GameOFTeens_JAVASCRIPT/static/js/main.4ffdf500.chunk.js",
+    "main.js.map": "/GameOFTeens_JAVASCRIPT/static/js/main.4ffdf500.chunk.js.map",
+    "runtime-main.js": "/GameOFTeens_JAVASCRIPT/static/js/runtime-main.dd854772.js",
+    "runtime-main.js.map": "/GameOFTeens_JAVASCRIPT/static/js/runtime-main.dd854772.js.map",
+    "static/css/2.10bc9b17.chunk.css": "/GameOFTeens_JAVASCRIPT/static/css/2.10bc9b17.chunk.css",
+    "static/js/2.07d9c916.chunk.js": "/GameOFTeens_JAVASCRIPT/static/js/2.07d9c916.chunk.js",
+    "static/js/2.07d9c916.chunk.js.map": "/GameOFTeens_JAVASCRIPT/static/js/2.07d9c916.chunk.js.map",
+    "index.html": "/GameOFTeens_JAVASCRIPT/index.html",
+    "static/css/2.10bc9b17.chunk.css.map": "/GameOFTeens_JAVASCRIPT/static/css/2.10bc9b17.chunk.css.map",
+    "static/css/main.afd7172b.chunk.css.map": "/GameOFTeens_JAVASCRIPT/static/css/main.afd7172b.chunk.css.map",
+    "static/js/2.07d9c916.chunk.js.LICENSE.txt": "/GameOFTeens_JAVASCRIPT/static/js/2.07d9c916.chunk.js.LICENSE.txt",
+    "static/media/css.9193caa9.jpg": "/GameOFTeens_JAVASCRIPT/static/media/css.9193caa9.jpg",
+    "static/media/html.b3cb48fb.jpg": "/GameOFTeens_JAVASCRIPT/static/media/html.b3cb48fb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd854772.js",
+    "static/css/2.10bc9b17.chunk.css",
+    "static/js/2.07d9c916.chunk.js",
+    "static/css/main.afd7172b.chunk.css",
+    "static/js/main.4ffdf500.chunk.js"
+  ]
+}
