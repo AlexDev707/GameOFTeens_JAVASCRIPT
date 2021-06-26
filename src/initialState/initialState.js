@@ -132,5 +132,5 @@ export const initialState = {
     ],
   },
   currentCategory: "",
-  currentQuestion: ""
+  currentQuestionIndex: 0
 };
