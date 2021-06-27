@@ -19,7 +19,7 @@ export default class Questionnaire extends Component {
 
         return (
             <div className={styles.container}>
-                <div className={styles.container}>{currentQuestionIndex + 1} / {questionsCollection.length}</div>
+                <div className={styles.counter}>{currentQuestionIndex + 1} / {questionsCollection.length}</div>
                 <div className={styles.question_container}>
                     <div className={styles.question_wrapper}>
                         <div className={styles.question_title}>{currentQuestion.title}</div>

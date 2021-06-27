@@ -631,7 +631,7 @@ export const initialState = {
       },
       {
         id: uuidv4(),
-        title: "Щос із переліченого не є покемоном ?",
+        title: "Що із переліченого не є покемоном ?",
         variants: [
           {
             id: uuidv4(),
