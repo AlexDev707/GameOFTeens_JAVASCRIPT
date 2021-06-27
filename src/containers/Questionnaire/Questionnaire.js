@@ -10,7 +10,7 @@ export default class Questionnaire extends Component {
           questionsCollection,
           currentQuestionIndex,
           setQuestionValue,
-          redirectToFinalPage
+          submitQuestionnaire
         } = this.props;
 
         const currentQuestion = questionsCollection[currentQuestionIndex]
@@ -19,36 +19,43 @@ export default class Questionnaire extends Component {
 
         return (
             <div className={styles.container}>
-                <div className={styles.container}>1/10</div>
+                <div className={styles.container}>{currentQuestionIndex + 1} / {questionsCollection.length}</div>
                 <div className={styles.question_container}>
-                    <div className={styles.question_title}>{currentQuestion.title}</div>
-                    <div>
-                        {currentQuestion.variants.map((variant) => (
-                            <div
-                                key={variant.text}
-                                className={styles.variant_container}
+                    <div className={styles.question_wrapper}>
+                        <div className={styles.question_title}>{currentQuestion.title}</div>
+                        <div>
+                            {currentQuestion.variants.map((variant) => (
+                                <div
+                                    key={variant.text}
+                                    className={styles.variant_container}
+                                >
+                                    <Checkbox
+                                        checked={variant.isChecked}
+                                        onClick={() => setQuestionValue(variant.id, variant.text)}
+                                    />
+                                    <div className={styles.text}>{variant.text}</div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className={styles.button_container}>
+                            <Button
+                                type="primary"
+                                disabled={isButtonDisable}
+                                onClick={
+                                    questionsCollection.length - 1 === currentQuestionIndex
+                                        ? submitQuestionnaire
+                                        : submitQuestion
+                                }
                             >
-                                <Checkbox checked={variant.isChecked} onClick={() => setQuestionValue(variant.id)} />
-                                <div>{variant.text}</div>
-                            </div>
-                        ))}
+                                {
+                                    questionsCollection.length - 1 === currentQuestionIndex
+                                        ? "Завершити"
+                                        : "Наступне"
+                                }
+                            </Button>
+                        </div>
                     </div>
                 </div>
-                <Button
-                    type="primary"
-                    disabled={isButtonDisable}
-                    onClick={
-                        questionsCollection.length - 1 === currentQuestionIndex
-                         ? redirectToFinalPage
-                         : submitQuestion
-                    }
-                >
-                    {
-                        questionsCollection.length - 1 === currentQuestionIndex
-                        ? "Завершити"
-                        : "Наступне"
-                    }
-                </Button>
             </div>
         );
     }

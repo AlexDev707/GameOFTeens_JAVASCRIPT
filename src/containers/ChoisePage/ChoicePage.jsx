@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import html from '../../images/html.jpg'
 import css from '../../images/css.jpg'
+import js from '../../images/js.jpeg'
 
 import styles from './ChoicePage.module.css'
 
@@ -22,6 +23,12 @@ export default class ChoicePage extends Component {
                         className={styles.img}
                         src={css}
                         alt='Hello, I am not Sasha'
+                    />
+                    <img
+                        onClick={() => chooseCategory('js')}
+                        className={styles.img}
+                        src={js}
+                        alt='Hello, I am not Sasuke Uchiha'
                     />
                 </div>
             </div>

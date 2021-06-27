@@ -1,7 +1,9 @@
 import React, {Component} from "react";
 import {initialState} from "./initialState/initialState";
+import { rightAnswers } from "./rightAnswers/rightAnswers";
 import ChoicePage from './containers/ChoisePage/ChoicePage';
 import Questionnaire from './containers/Questionnaire/Questionnaire'
+import FinalPage from "./containers/FinalPage/FinalPage";
 import styles from './App.module.css';
 
 export default class App extends Component {
@@ -19,19 +21,35 @@ export default class App extends Component {
         })
     }
 
-    redirectToFinalPage = () => {
+    submitQuestionnaire = () => {
+        let rightAnswersAmount = 0;
+
+        this.state.answerHistory.forEach((answer) => {
+            if(rightAnswers[this.state.currentCategory].some((rightAnswer) => rightAnswer === answer)){
+                rightAnswersAmount++
+            }
+        });
+
         this.setState({
-            isFinalPage: true
+            isFinalPage: true,
+            finalScore: rightAnswersAmount
         })
     }
 
-    setQuestionValue = (variantId) => {
+    addItemToAnswerHistory = (answer) => {
+        this.setState({
+            answerHistory: this.state.answerHistory.push(answer)
+        })
+    }
+
+    setQuestionValue = (variantId, text) => {
         const {
             questionnaires,
             currentCategory,
             currentQuestionIndex
         } = this.state;
 
+        this.addItemToAnswerHistory(text)
 
         let updatedCategory = [...questionnaires[currentCategory]]
         updatedCategory[currentQuestionIndex].variants = updatedCategory[currentQuestionIndex].variants.map((variant) => {
@@ -57,13 +75,15 @@ export default class App extends Component {
             <div className={styles.container}>
                 {
                     this.state.isFinalPage
-                        ? (<div>Final</div>)
+                        ? (
+                            <FinalPage result={this.state.finalScore * 10} />
+                        )
                         : (
                             <>
                                 {this.state.currentCategory === ''
                                     ? <ChoicePage chooseCategory={this.chooseCategory}/>
                                     : <Questionnaire
-                                        redirectToFinalPage={this.redirectToFinalPage}
+                                        submitQuestionnaire={this.submitQuestionnaire}
                                         submitQuestion={this.submitQuestion}
                                         questionsCollection={this.state.questionnaires[this.state.currentCategory]}
                                         currentQuestionIndex={this.state.currentQuestionIndex}
