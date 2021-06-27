@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/GameOFTeens_JAVASCRIPT/static/css/main.afd7172b.chunk.css",
-    "main.js": "/GameOFTeens_JAVASCRIPT/static/js/main.4ffdf500.chunk.js",
-    "main.js.map": "/GameOFTeens_JAVASCRIPT/static/js/main.4ffdf500.chunk.js.map",
-    "runtime-main.js": "/GameOFTeens_JAVASCRIPT/static/js/runtime-main.dd854772.js",
-    "runtime-main.js.map": "/GameOFTeens_JAVASCRIPT/static/js/runtime-main.dd854772.js.map",
-    "static/css/2.10bc9b17.chunk.css": "/GameOFTeens_JAVASCRIPT/static/css/2.10bc9b17.chunk.css",
-    "static/js/2.07d9c916.chunk.js": "/GameOFTeens_JAVASCRIPT/static/js/2.07d9c916.chunk.js",
-    "static/js/2.07d9c916.chunk.js.map": "/GameOFTeens_JAVASCRIPT/static/js/2.07d9c916.chunk.js.map",
-    "index.html": "/GameOFTeens_JAVASCRIPT/index.html",
-    "static/css/2.10bc9b17.chunk.css.map": "/GameOFTeens_JAVASCRIPT/static/css/2.10bc9b17.chunk.css.map",
-    "static/css/main.afd7172b.chunk.css.map": "/GameOFTeens_JAVASCRIPT/static/css/main.afd7172b.chunk.css.map",
-    "static/js/2.07d9c916.chunk.js.LICENSE.txt": "/GameOFTeens_JAVASCRIPT/static/js/2.07d9c916.chunk.js.LICENSE.txt",
-    "static/media/css.9193caa9.jpg": "/GameOFTeens_JAVASCRIPT/static/media/css.9193caa9.jpg",
-    "static/media/html.b3cb48fb.jpg": "/GameOFTeens_JAVASCRIPT/static/media/html.b3cb48fb.jpg"
+    "main.css": "/static/css/main.340c389a.chunk.css",
+    "main.js": "/static/js/main.20d464ae.chunk.js",
+    "main.js.map": "/static/js/main.20d464ae.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f26797a3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f26797a3.js.map",
+    "static/css/2.10bc9b17.chunk.css": "/static/css/2.10bc9b17.chunk.css",
+    "static/js/2.15e9c2a9.chunk.js": "/static/js/2.15e9c2a9.chunk.js",
+    "static/js/2.15e9c2a9.chunk.js.map": "/static/js/2.15e9c2a9.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.10bc9b17.chunk.css.map": "/static/css/2.10bc9b17.chunk.css.map",
+    "static/css/main.340c389a.chunk.css.map": "/static/css/main.340c389a.chunk.css.map",
+    "static/js/2.15e9c2a9.chunk.js.LICENSE.txt": "/static/js/2.15e9c2a9.chunk.js.LICENSE.txt",
+    "static/media/ballet.c5289549.jpeg": "/static/media/ballet.c5289549.jpeg",
+    "static/media/cake.5388e965.jpeg": "/static/media/cake.5388e965.jpeg",
+    "static/media/css.9193caa9.jpg": "/static/media/css.9193caa9.jpg",
+    "static/media/html.b3cb48fb.jpg": "/static/media/html.b3cb48fb.jpg",
+    "static/media/js.b8237f27.jpeg": "/static/media/js.b8237f27.jpeg",
+    "static/media/king.28f96f3b.jpeg": "/static/media/king.28f96f3b.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.dd854772.js",
+    "static/js/runtime-main.f26797a3.js",
     "static/css/2.10bc9b17.chunk.css",
-    "static/js/2.07d9c916.chunk.js",
-    "static/css/main.afd7172b.chunk.css",
-    "static/js/main.4ffdf500.chunk.js"
+    "static/js/2.15e9c2a9.chunk.js",
+    "static/css/main.340c389a.chunk.css",
+    "static/js/main.20d464ae.chunk.js"
   ]
 }
